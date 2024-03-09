@@ -8,6 +8,54 @@ class Program
     static void Main(string[] args)
     {
         string choice;
+        do {
+            //version 2
+            Console.WriteLine("Please select one of the following choices.");
+            Console.WriteLine("1. Write");
+            Console.WriteLine("2. Display");
+            Console.WriteLine("3. Load");
+            Console.WriteLine("4. Save");
+            Console.WriteLine("5. Quit");
+            Console.WriteLine("What would you like to do?");
+            choice = Console.ReadLine();
+            Journal newJ = new Journal();
+            if (choice == "1")
+            {
+                PromptGenerator newP = new PromptGenerator();
+                string prompt = newP.GetRandomPrompt();
+
+                Entry newE = new Entry();
+                newE._promptText = prompt;
+                newE.Display();
+                newJ.AddEntry(newE);
+            }
+            else if (choice == "2")
+            {
+                newJ.DisplayAll();
+            }
+            else if (choice == "3")
+            {
+                newJ._entries.Clear();
+                string fileName = Console.ReadLine();
+                newJ.LoadFromFiles(fileName);
+            
+
+            }
+            else if (choice == "4")
+            {
+                Console.WriteLine("What is the file name?");
+                string fileName = Console.ReadLine();
+                newJ.SaveToFiles(fileName);
+            }
+            else if (choice == "5")
+            {
+                break;
+            }
+        } while (choice != "5");
+
+        /*
+        version 1
+        string choice;
         string current_entry = "";
         string current_response = "";
         List<string> stored =  new List<string>();
@@ -80,5 +128,6 @@ class Program
                 break;
             }
         } while (choice != "5");
+        */
     }
 }
