@@ -19,7 +19,7 @@ class Program
                 //breathing
                 Console.Clear();
                 string name = "Breathing";
-                string description = "";
+                string description = "This activity will help you relax by walking you through breathing in and out slowly. Clear your mind and focus on your breathing.";
                 BreathingActivity newB = new BreathingActivity(name, description);
                 newB.Run();
             }
@@ -28,7 +28,7 @@ class Program
                 //reflecting
                 Console.Clear();
                 string name = "Reflecting";
-                string description = "";
+                string description = "This activity will help you reflect on times in your life when you have show strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
                 List<string> listP = new List<string>();
                 listP.Add("Think of a time when you stood up for someone else.");
                 listP.Add("Think of a time when you did something really difficult.");
@@ -52,7 +52,7 @@ class Program
                 //listing
                 Console.Clear();
                 string name = "Listing";
-                string description = "";
+                string description = "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.";
                 List<string> listP = new List<string>();
                 listP.Add("Who are people that you appreciate?");
                 listP.Add("What are personal strengths of yours?");
