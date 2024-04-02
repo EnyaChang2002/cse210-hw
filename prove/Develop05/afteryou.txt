@@ -1,0 +1,4 @@
+76
+SimpleGoal@souo@a soup@4@True
+EternalGoal@rabbit@a rabbit soup@10@False
+ChecklistGoal@car@a car@14@3@3@20

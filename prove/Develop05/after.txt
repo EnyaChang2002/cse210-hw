@@ -1,0 +1,4 @@
+0
+SimpleGoal@souo@a soup@4@False
+EternalGoal@rabbit@a rabbit soup@10@False
+ChecklistGoal@car@a car@14@0@3@20
